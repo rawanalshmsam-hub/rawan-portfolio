@@ -1,0 +1,111 @@
+{% extends 'layouts/base.html' %}
+
+{% load static %}
+
+
+{% block content %}
+
+
+<div class="about-page">
+
+
+    <!-- LEFT -->
+
+    <div class="about-image">
+
+        <img src="{% static 'duck4.png' %}">
+
+    </div>
+
+
+
+    <!-- RIGHT -->
+
+    <div class="about-content">
+
+
+        <h1>
+
+            Who Am I?
+
+        </h1>
+
+
+        <p>
+
+            Computer Science student
+            passionate about AI,
+            Cybersecurity, and
+            building secure systems.
+
+            <br><br>
+
+            I enjoy transforming ideas
+            into modern and interactive
+            digital experiences.
+
+        </p>
+
+
+
+        <!-- SKILLS -->
+
+        <div class="skills">
+
+            <span>Python</span>
+
+            <span>Django</span>
+
+            <span>AI</span>
+
+            <span>Cybersecurity</span>
+
+            <span>UI/UX</span>
+
+        </div>
+
+
+
+        <!-- ACHIEVEMENTS -->
+
+        <div class="achievement-card">
+
+            <h2>
+
+                Achievements
+
+            </h2>
+
+
+            <ul>
+
+                <li>
+
+                    Top 5% - Chipathon 2026
+
+                </li>
+
+                <li>
+
+                    IBM AI Certification
+
+                </li>
+
+                <li>
+
+                    Hackathon Winner
+
+                </li>
+
+            </ul>
+
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+{% endblock %}

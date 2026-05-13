@@ -1,0 +1,88 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>rawan</title>
+
+    <link rel="stylesheet"
+          href="{% static 'style.css' %}">
+
+</head>
+
+<body>
+
+
+<div class="menu-btn"
+    id='menuBtn'
+
+     onclick="openMenu()">
+
+    ☰
+
+</div>
+
+
+<div class="sidebar"
+     id="sidebar">
+
+    <span class="close-btn"
+          onclick="closeMenu()">
+
+          ✕
+    </span>
+
+   <a href="/">Home</a>
+
+    <a href="/about/">Who Am I</a>
+
+    <a href="/works/">My Work</a>
+
+    <a href="/achiv/">My Adventures</a>
+
+    <a href="/contan/">Connections</a>
+
+    
+
+</div>
+
+
+{% block content %}
+
+{% endblock %}
+
+<script>
+
+function openMenu(){
+
+    document
+    .getElementById("sidebar")
+    .style.left = "0";
+
+
+    document
+    .getElementById("menuBtn")
+    .style.display = "none";
+}
+
+
+function closeMenu(){
+
+    document
+    .getElementById("sidebar")
+    .style.left = "-50%";
+
+
+    document
+    .getElementById("menuBtn")
+    .style.display = "block";
+}
+
+</script>
+
+</body>
+
+</html>
